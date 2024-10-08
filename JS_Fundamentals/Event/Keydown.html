@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Click Event Handling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 id="output" "text-3xl font-bold underline">
+
+    </h1>
+    <div clasName="flex flex-col gap-2 ">
+        <label for="">Enter Your Name.</label>
+        <input id="myInput" class="rounded border p-3 m-3 shadow" />
+    </div>
+    <script>
+
+        const myInput = document.getElementById("myInput");
+        const output = document.getElementById('output')
+        myInput.onkeydown = function (event) {
+            output.textContent += event.key;
+        }
+
+
+    </script>
+
+</body>

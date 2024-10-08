@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Click Event Handling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 id="output" "text-3xl font-bold underline">
+        tailwindcss
+    </h1>
+    <div id="myDiv" class="rounded border p-3 m-3 shadow"> this is div containing view/components
+    </div>
+    <script>
+
+        const myDiv = document.getElementById("myDiv");
+        const output = document.getElementById("output")
+        let val = 0;
+        myDiv.onmouseover = function () {
+            val += 5;
+            output.textContent = val;
+
+        }
+
+    </script>
+
+</body>
